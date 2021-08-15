@@ -1,0 +1,15 @@
+.container{
+    border-style: dotted;
+    margin-top: 210px;
+}
+.table{
+    text-align: center;}
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 12%;
+        height: 120px;
+        background-color:#66D3FA;
+    }

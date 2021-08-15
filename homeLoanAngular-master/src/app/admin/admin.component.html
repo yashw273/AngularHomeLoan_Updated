@@ -1,0 +1,26 @@
+<p>admin works!</p>
+<!-- <p>admin works!</p> -->
+ <h1>Application Requests</h1>
+ <div class="container">
+        <table> 
+        <table  class="table">
+            <thead style="color: blue;">
+                <th>Application ID</th>
+                <th>Customer ID</th>
+                <th>Property Name</th>
+                <th>Property Location</th>
+                <th>Loan Amount</th>
+                <th>Loan Status</th>
+            </thead>
+            <tr *ngFor="let ap of app1">
+               <td>{{ap.applicationid}}</td>
+               <td>{{ap.custid}}</td>
+               <td>{{ap.propertyname}}</td>
+               <td>{{ap.propertylocation}}</td>
+               <td>{{ap.estimatedamount}}</td>
+               <td>{{ap.loanstatus}}</td>
+               <td> <button  style="color:green" (click)="CreateAccount()" >Approve</button></td>
+               <td> <button (click)="deleteRow(ap.applicationid)" style="color:red">Reject</button></td>
+            </tr>
+
+        </table>

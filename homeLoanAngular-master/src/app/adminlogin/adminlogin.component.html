@@ -1,0 +1,19 @@
+<div class="container">
+  <form #login ="ngForm" (ngSubmit)="Adminlogin()" novalidate>
+    <h2>Admin Login</h2>
+    <hr/>
+    <br/>
+        <p> 
+          <label for="Admin ID">Admin ID</label>
+          <input type="text" name="adminid" id="adminid" required [(ngModel)]="adminid">
+          <p> 
+          <p> 
+          <label for="Password">Password</label>
+          <input type="password" name="password" id="password" required [(ngModel)]="pass">
+          <p> 
+          <p>
+          <button type="submit" [disabled]="!login.valid" class="btn btn-primary" (click)="Adminlogin()" >Admin Login</button>
+        
+      
+    </form> 
+  </div>
