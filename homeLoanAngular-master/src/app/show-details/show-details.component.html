@@ -122,8 +122,13 @@
     
      <div class="col">
       <p class="lead">Password</p>
-     <input type="password" name="upass" class="form-control" #up="ngModel" placeholder="Passw@123" [(ngModel)]="preview.password" required >
-       
+     <input type="password" name="upass" class="form-control" #up="ngModel" placeholder="Passw@123" [(ngModel)]="preview.password" required pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$">
+     <div class="invalid-feedback">
+      <div  *ngIf="up.invalid && (up.dirty||up.touched) && up.errors?.required" >
+      Password  is required</div>
+      <div *ngIf="up.errors?.pattern">( "Password Requires At least one upper case, lower case, one digit, one special character, Min 8. Characters" )
+        </div>
+           </div>
      </div>
      </div>
      <br>
@@ -144,11 +149,13 @@
       <br>
       <div class="col">
      <p class="lead">Annual Income</p>
-     <input type="text" id="income" name="annualincome" class="form-control" #uincome="ngModel"  placeholder="Enter Annual Income" [(ngModel)]="preview.annualincome" required>
+     <input type="text" id="income" name="annualincome" class="form-control" #uincome="ngModel"  placeholder="Enter Annual Income" [(ngModel)]="preview.annualincome" required pattern="^[1-9][0-9]*$">
      <div class="invalid-feedback">
-     <div  *ngIf="uincome.invalid && (uincome.dirty||uincome.touched) && uincome.errors?.required">
+      <div  *ngIf="uincome.invalid && (uincome.dirty||uincome.touched) && uincome.errors?.required">
       Income is required</div>
-      <div *ngIf="uincome.value==0">Invalid Income</div>
+<div *ngIf="uincome.errors?.pattern">
+  Income Invalid
+</div>
     </div>
 
     
@@ -179,12 +186,15 @@
      
       <div class="col">
    <p class="lead">Retirement Age</p>
-    <input type="text" id="age" name="retirementage" class="form-control" #uage="ngModel" placeholder="Enter Retirement Age" [(ngModel)]="preview.retirementage" required >
+    <input type="text" id="age" name="retirementage" class="form-control" #uage="ngModel" placeholder="Enter Retirement Age" [(ngModel)]="preview.retirementage" required pattern="^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|100)">
     <div class="invalid-feedback">
       <div  *ngIf="uage.invalid && (uage.dirty||uage.touched) && uage.errors?.required" >
       AGE is required
     </div>
+    <div *ngIf="uage.errors?.pattern">
+      AGE INVALID
   </div>
+    </div>
      
      
      </div>
