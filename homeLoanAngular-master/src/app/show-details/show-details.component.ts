@@ -13,6 +13,7 @@ export class ShowDetailsComponent implements OnInit {
   public isValid:number=0;
   message?:any={};
   c1:any;
+ 
   constructor(private customerService:CustomerService , private router:Router) 
   {
     
