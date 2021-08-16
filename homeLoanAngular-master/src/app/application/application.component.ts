@@ -9,7 +9,7 @@ import { ApplicationService } from '../application.service';
   styleUrls: ['./application.component.css']
 })
 export class ApplicationComponent implements OnInit {
-
+myimage:string="assets/images/lon2.jpg";
  
   constructor(private appservice:ApplicationService, private router:Router,private route:ActivatedRoute)
    {this.application=new Application(); }

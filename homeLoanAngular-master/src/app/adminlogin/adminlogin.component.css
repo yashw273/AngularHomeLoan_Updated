@@ -21,3 +21,13 @@
     h2{
         text-align: center;
     }
+    .bimage1 {
+        background-image: url("https://www.lootle.online/wp-content/uploads/2020/12/animat-lock-color.gif"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+    /* You must set a specified height */
+   
+    background-position:centre; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 1400px 600px; /* Resize the background image to cover the entire container */
+    margin: auto;
+      }

@@ -1,6 +1,6 @@
 .container{
 
-    border-style: groove;
+    
     width: 350px;
     height: 430px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -31,3 +31,20 @@
         height: 120px;
         background-color:#66D3FA;
     }
+    .bimage1 {
+        background-image: url("https://www.rocketlawyer.com/blog/wp-content/uploads/2016/01/ThinkstockPhotos-452421227-c.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        /* You must set a specified height */
+       
+        background-position:centre; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 1400px 600px; /* Resize the background image to cover the entire container */
+        margin: auto;
+       
+      }
+
+      .space
+      {
+height: 600px;
+width: auto;
+      }

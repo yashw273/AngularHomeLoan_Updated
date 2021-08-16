@@ -1,10 +1,10 @@
-.container{
+ .container{
 
-    border-style: groove;
+    /* border-style: groove; */
     width: 500px;
-    height: 220px;
+    height: 320px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    align-items: center;
+    align-items: left;
 
     
     }
@@ -29,6 +29,8 @@
     }
     h2{
         text-align: center;
+        font-weight: bold;
+        padding-left: 100px;
     }
     header {
         display: flex;
@@ -37,4 +39,17 @@
         padding: 30px 12%;
         height: 120px;
         background-color:#66D3FA;
-    }
+    } 
+
+    .bimage1 {
+        background-image: url("https://image.shutterstock.com/image-photo/home-loan-reverse-mortgage-saving-260nw-1219076071.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        /* You must set a specified height */
+       
+        background-position:centre; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 1400px 400px; /* Resize the background image to cover the entire container */
+        margin: auto;
+       
+      }
+   

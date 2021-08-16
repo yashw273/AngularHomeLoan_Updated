@@ -1,6 +1,4 @@
-body {
-    margin: 0;
-}
+
     .bimage {
         background-image: url("https://m.economictimes.com/thumb/msid-83033066,width-1200,height-900,resizemode-4,imgsize-202355/home-loan-above-rs-30-lakh-to-rs-75-lakh.jpg"); /* The image used */
         background-color: #cccccc; /* Used if the image is unavailable */
@@ -15,8 +13,17 @@ body {
     justify-content:center;
     padding-top: 21vh;     
     }
-    
-
+    .bimage1 {
+        background-image: url("https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/12/25/945565-homeloan-istock.jpg"); /* The image used */
+        background-color: #cccccc; /* Used if the image is unavailable */
+        /* You must set a specified height */
+       
+        background-position:centre; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 1400px 600px; /* Resize the background image to cover the entire container */
+        margin: auto;
+       
+      }
 .header1 {
     display: flex;
     justify-content: space-between;
@@ -61,7 +68,7 @@ a {
 .getting_money {
     display: flex;
     justify-content: space-between;
-    padding-top: 21vh;
+    padding-top: 40vh;
     /* background-image: url(./assets/how-it-works-background.jpg); */
     height: 108vh;
     background-position: center center;
@@ -75,6 +82,7 @@ a {
     /* position: absolute;
     top: 41vh; */
     margin-left: 13vw;
+    padding-top: 21vh;
 
 }
 
@@ -109,6 +117,8 @@ button:hover{
 .payment {
     text-align: center;
     align-items: center;
+    padding-left:90px;
+    padding-top: 80px;
 
 }
 
@@ -246,17 +256,20 @@ input {
 }
 .choose_text{
     text-align: center;
+    padding-top:80px;
 }
 .combine3{
     display: flex;
     justify-content: space-between;
     padding: 108px;
     padding-top: 80px;
+    border: solid;
 }
 .divs{
     background-color: lightgray;
     padding: 41px 67px;
     margin-right: 51px;
+    border: solid;
 }
 .howit{
     color: rgb(11 13 103);

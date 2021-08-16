@@ -32,14 +32,11 @@ export class ShowDetailsComponent implements OnInit {
 
 
   NextDoc(){
-    if(this.message!=null)
-     {
+    
+     
       this.router.navigate(['document']);
-     }
-     else
-     {
-       alert("Please save the details before you continue");
-     }
+    
+     
   }
 
 

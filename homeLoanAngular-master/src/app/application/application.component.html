@@ -1,5 +1,5 @@
-
-<!-- <div>
+<!-- 
+<div>
     <form #myForm="ngForm" (ngSubmit)="saveData()">
         <table>
             <tr>
@@ -40,8 +40,9 @@
 </div>-->
 
 
-
+<!-- 
 <p>application works!</p>
+
 <div class="container">
     <form #DocForm="ngForm" (ngSubmit)="saveData()">
         <h2>Application Form</h2>
@@ -81,4 +82,46 @@
    
 
     </form>    
+</div>  --> 
+<div class="bimage1">
+<div class="container">
+    <form #DocForm="ngForm" (ngSubmit)="saveData()">
+        <h2 style="font-weight: bold; color: white;">Application Form</h2>
+        
+       
+
+                <p>
+                <label style="color:black; font-size: 2vw;font-weight: bold;" for="custid">Customer ID</label>  
+                <input  type="number" name="custid" [(ngModel)]="application.custid" required>       
+                <p>
+                <p>
+                <label style="color:black; font-size: 2vw;font-weight: bold;" for="propertyname">Property Name</label>  
+                <input  type="text" name="propertyname" [(ngModel)]="application.propertyname" >      
+                <p>
+                <p>
+                <label style="color:black; font-size: 2vw;font-weight: bold;" for="propertylocation">Property Location</label>  
+                <input  type="text" name="propertylocation" [(ngModel)]="application.propertylocation" required>      
+                <p>
+                <p>
+                <label style="color:black; font-size: 2vw;font-weight: bold;" for="estimatedamount">Estimated Amount</label> 
+                <input  type="number" name="estimatedamount" [(ngModel)]="application.estimatedamount" required>      
+                <p>
+                <p>
+                <label style="color:black; font-size: 2vw;font-weight: bold;" for="loanstatus">Loan Status</label> 
+                <input  type="text" name="loanstatus" [(ngModel)]="application.loanstatus" required>      
+                <p>
+                
+                   
+               <button type="submit" class="btn btn-primary" [disabled]="!DocForm.valid">     
+            saveData</button>
+           <br>
+           <br>
+                  
+                <button (click)="Home()" class="btn btn-primary">Home</button>       
+            
+
+   
+
+    </form>    
+</div>
 </div>

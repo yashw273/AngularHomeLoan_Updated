@@ -1,4 +1,5 @@
-<div class="radio">  
+ <div class="bimage1">
+ <div class="radio">  
   <label>  
       <input type="radio" name="RB1" value="login" (click)="setradio('login')" [checked]='true' ngModel>  
      Customer ID  
@@ -11,32 +12,36 @@
   </label>  
 </div> 
 <div class="container">
-<h2> Login </h2>
+<h2 style="font-weight: bold;"> Login </h2>
 <div *ngIf="isSelected('login')" >  
       <form #login ="ngForm" (ngSubmit)="formSubmit(login)" novalidate>
           <table>
             <tr>
-              <td>Customer ID</td>
-              <td><input type="text" name="customerid" id="customerid" required [(ngModel)]="customerid"></td>
+              <td style="color:black; font-size: 2vw;font-weight: bold;">Customer ID</td>
+              <td ><input type="text" name="customerid" id="customerid" required [(ngModel)]="customerid"></td>
               </tr>
               <br>
               <tr>
-              <td>Password</td>
+              <td style="color:black; font-size: 2vw;font-weight: bold;">Password</td>
               <td><input type="password" name="password" id="password" required [(ngModel)]="pass"></td>
               </tr>
               <br>
               <tr>
               <td></td>
+              <br>
+              <br>
+              <br>
+              <br>
               <button type="submit" [disabled]="!login.valid" class="btn btn-primary" (click)="loginForm()" > Login</button>
-             <button type="submit" [disabled]="!login.valid" class="btn btn-primary" (click)="NewUser()" > New User</button>
              <button type="submit"  class="btn btn-primary" (click)="Admin()" > Admin</button>
             </tr>
           </table>
         </form> 
 </div>  
  
+
 <div *ngIf="isSelected('loan')">  
-  <form #loan ="ngForm" (ngSubmit)="formSubmit1(loan)" novalidate>
+  <form #loan ="ngForm" (ngSubmit)="formSubmit1(loan)" novalidate class="form-control">
       <table>
         
         <tr>
@@ -57,4 +62,6 @@
     </form>
     
 </div> 
+</div> 
 </div>
+

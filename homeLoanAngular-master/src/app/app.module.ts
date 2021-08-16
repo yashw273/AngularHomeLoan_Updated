@@ -18,6 +18,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { SignupComponent } from './signup/signup.component';
 import { SearchCustomerComponent } from './search-customer/search-customer.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { HomeUpdatedComponent } from './home-updated/home-updated.component';
+import { LoanTrackerComponent } from './loan-tracker/loan-tracker.component';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     SignupComponent,
     SearchCustomerComponent,
     AdminloginComponent,
+    HomeUpdatedComponent,
+    LoanTrackerComponent,
    
 
     

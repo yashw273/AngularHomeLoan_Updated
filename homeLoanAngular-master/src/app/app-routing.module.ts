@@ -7,6 +7,7 @@ import { ApplicationComponent } from './application/application.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DocumentComponent } from './document/document.component';
 import { FaqComponent } from './faq/faq.component';
+import { HomeUpdatedComponent } from './home-updated/home-updated.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ShowAccountComponent } from './show-account/show-account.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   // {path:'signup', component:SignupComponent},
   {path:'calculator',component:CalculatorComponent},
   {path:'home', component:HomeComponent},
+  {path:'home1', component:HomeUpdatedComponent},
  
  
 
